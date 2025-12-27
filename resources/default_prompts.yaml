@@ -1,0 +1,61 @@
+Prompt for Images: |
+  # General Instructions
+
+  Help me describe the screenshot (i.e., the attached image), which was extracted from a PDF.
+
+  Write a caption for the screenshot that is:
+    - very concise;
+    - never redundant with respect to the information contained in this prompt;
+    - exhaustive with regard to the information that can be inferred from the image. The caption must include all the `TEXT` that appears in the image (also reported below) in complete sentences that describe its meaning. However, text that appears in the image but does not make sense should be considered a copy-and-paste error from the PDF and therefore discarded.
+    - at the beginning of the caption, introduce an extremely brief sentence that names (1) the product (deducible from the `CONTEXT` and from the tree of `SECTIONS` available below) and (2) the type of image (e.g.: installation photo, product photo, technical diagram, installation diagram, textual module, etc.).
+
+  Your goal is to generate a caption in Italian that is effective for retrieving information from this image within a RAG architecture.
+  Note that the caption will be contextualized with the information reported below; and these must not be redundant.
+  The contextualization is based on the texts of the screenshots adjacent to the one currently being analyzed.
+
+  Write only the caption, so that I can copy and paste it into my DB; do not add anything else.
+
+
+  # Data related to the attached screenshot to be analyzed
+
+  ## TEXT of the screenshot:
+  ```{{text}}```.
+
+  ## Tree of SECTIONS (separated by `>`) in which the screenshot appears:
+  ```{{title_path}}````.
+
+  ## CONTEXT of the screenshot:
+  ```{{context}}```.
+
+
+Prompt for Tables: |
+  # General Instructions
+
+  Help me describe a table extracted from the PDF catalog.
+  To do this, use the text from the table that has been copy-pasted (therefore with possible formatting errors) and the screenshot of the PDF that are attached below.
+
+  Write two paragraphs, without formatting:
+  1. A caption of the table, which is:
+      - very concise;
+      - never redundant with respect to the information contained in this prompt;
+      - exhaustive with regard to the information that can be inferred from the table.
+      - at the beginning of the caption, introduce an extremely brief sentence that names the product (deducible from the `CONTEXT` and from the tree of `SECTIONS` available below).
+  2. Add a paragraph that reports all the data contained in the table in JSON format, repeating (where necessary) the headers of columns, rows, sub-columns, sub-rows, etc. To do this, use the `TEXT` reported below and the attached screenshot.
+
+  The generated text must be in Italian, and effective for retrieving information from this table within a RAG architecture.
+  Note that the text you will write will be contextualized with the information reported below; and these must not be redundant.
+  The contextualization is based on the texts of the screenshots adjacent to the one currently being analyzed.
+
+  Write only the caption and the table, so that I can copy and paste them into my DB; do not add anything else.
+
+
+  # Data related to the table to be analyzed (attached screenshot)
+
+  ## TEXT of the table:
+  ```{{text}}```.
+
+  ## Tree of SECTIONS (separated by `>`) in which the screenshot appears:
+  ```{{title_path}}```.
+
+  ## CONTEXT of the screenshot:
+  ```{{context}}```.
