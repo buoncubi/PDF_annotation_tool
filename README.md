@@ -57,37 +57,37 @@ The GUI also allows you to:
 #### Main View Components
 
 See the main view (in the screenshot below), where the buttons and view are meant to:
- [**1**]. Open a new project by setting its configuration and the relative PDF file.
- [**2**]. Use the Unstructured API to automatically select PDF areas. This button 
+ - [**1**]. Open a new project by setting its configuration and the relative PDF file.  
+ - [**2**]. Use the Unstructured API to automatically select PDF areas. This button 
           allows serializing Unstructured API results as well as loading them back 
-          into the project.
- [**3**]. Select the PDF pages to be considered, which can be specified as single 
+          into the project.  
+ - [**3**]. Select the PDF pages to be considered, which can be specified as single 
           pages or ranges of pages (e.g., `1, 2, 10-15, 3, 310-311`). If empty, all 
-          PDF pages will be considered.
- [**4**]. Open the JSON representation of the data partitioned from the PDF in a 
-          previous usage of the GUI.
- [**5**]. Save the current JSON representation of the data partitioned from the PDF.
- [**6**]. Configure and invoke ChatGPT for augmenting PDF selections with some 
-          descriptions.
- [**7**]. Navigate to the previous PDF page.
- [**8**]. Navigate to the next PDF page.
- [**9**]. Go to a specific PDF page (e.g., `11`), which is shown in the relative 
-          label.
- [**10**]. Choose the type of a new PDF area to be set (i.e., rectangular or 
-           polygonal).
- [**11**]. The view where the PDF and its areas are shown.
- [**12**]. The zoom level of the PDF.
- [**13**]. The legend of the categories assigned to PDF areas.
- [**14**]. Select the category areas to show in the 19-th and 20-th views.
- [**15**]. Type the text used to search for specific areas to be shown in the 19-th 
-           and 20-th views.
- [**16**]. Choose the type of metadata to use for searching.
- [**17**]. Perform PDF area searching based on the 15-th and 16-th elements.
- [**18**]. Enable making elements selected in the 19-th view be highlighted also in 
-           the 20-th view, and vice versa.
- [**19**]. The view of selected PDF areas as they will be stored in the output JSON 
-           file.
- [**20**]. The view of selected PDF areas structured as a tree.
+          PDF pages will be considered.  
+ - [**4**]. Open the JSON representation of the data partitioned from the PDF in a 
+          previous usage of the GUI.  
+ - [**5**]. Save the current JSON representation of the data partitioned from the PDF.  
+ - [**6**]. Configure and invoke ChatGPT for augmenting PDF selections with some 
+          descriptions.  
+ - [**7**]. Navigate to the previous PDF page.  
+ - [**8**]. Navigate to the next PDF page.  
+ - [**9**]. Go to a specific PDF page (e.g., `11`), which is shown in the relative 
+          label.  
+ - [**10**]. Choose the type of a new PDF area to be set (i.e., rectangular or 
+           polygonal).  
+ - [**11**]. The view where the PDF and its areas are shown.  
+ - [**12**]. The zoom level of the PDF.  
+ - [**13**]. The legend of the categories assigned to PDF areas.  
+ - [**14**]. Select the category areas to show in the 19-th and 20-th views.  
+ - [**15**]. Type the text used to search for specific areas to be shown in the 19-th 
+           and 20-th views.  
+ - [**16**]. Choose the type of metadata to use for searching.  
+ - [**17**]. Perform PDF area searching based on the 15-th and 16-th elements.
+ - [**18**]. Enable making elements selected in the 19-th view be highlighted also in 
+           the 20-th view, and vice versa.  
+ - [**19**]. The view of selected PDF areas as they will be stored in the output JSON 
+           file.  
+ - [**20**]. The view of selected PDF areas structured as a tree.  
 
 ![The main GUI view.](resources/GUI_example_screenshots/0_main_view.png)
 
